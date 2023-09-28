@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            background-color: blueviolet;
+            width: 100%;
+            height: 100vh;
+
+        }
+        main nav{
+            height: 150px;
+            width: 100%;
+            background-color: yellow;
+            border: 1px solid;
+        }
+
+        main nav div a{
+
+                padding: 20px 15px;
+                background-color: blue;
+                color: azure;
+                margin-left: 40px;
+                border-radius: 10px;
+                text-decoration: none;
+        }
+        
+        #buttonParrent{
+            height: 70px;
+            width: 450px;
+            border: 1px solid yellow;
+            margin-left: 830px;
+            margin-top: 60px;
+        }
+
+        #frame{
+            height: 550px;
+            width: 300px;
+            border: 1px solid;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: brown;
+            /*border-radius: 0px 50px;*/
+        }
+        .child{
+            height: 275px;
+            border: 1px solid;
+            width: 250px;
+            margin-left: 25px;
+        }
+        #img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-image: url(./Photos/Car.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+    </style>
+</head>
+<body>
+
+    <main>
+        <nav>
+            <div id="Button Parrent">
+                <a href="https://www.google.com">Home</a>
+                <a href="https://www.google.com">Contact</a>
+                <a href="https://www.google.com">About</a>
+            </div>
+        </nav>
+        <section id="sec2">
+            <div id="frame">
+            <div id="child1" class="child"></div>
+            <div id="img"></div>
+            </div>
+            <ul>
+                Contact Details
+                <li>Name = Akshay</li>
+                <li>Email = akshayvjagtap346@.com</li>
+                <li>Designation = FrontEnds Dev</li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

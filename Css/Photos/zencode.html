@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            display: grid;
+            height: 500px;
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: teal;
+            grid-template-areas:'header header header header header header '
+                                'menu main main main right right'
+                                'menu footer footer footer footer footer';
+
+                                gap: 10px;
+            
+
+        }
+        #iterm1
+        {
+                grid-area:header;
+        }
+        #iterm2
+        {
+            grid-area:menu;
+        }
+        #iterm3
+        {
+            grid-area:main;
+        }
+        #iterm4
+        {
+            grid-area:rigth;
+        }
+        #iterm5
+        {
+            grid-area:footer;   
+        }
+        .iterm
+        {
+            padding: 10px;
+            background-color: yellow;
+            border: 1px solid;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iterm" id="iterm1">HEADER</div>
+        <div class="iterm" id="iterm2">MENU</div>
+        <div class="iterm" id="iterm3">MAIN</div>
+        <div class="iterm" id="iterm4">RIGTH</div>
+        <div class="iterm" id="iterm5">FOOTER</div>
+
+    </div>
+</body>
+</html>

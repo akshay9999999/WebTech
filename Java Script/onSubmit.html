@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""onsubmit="getSubmit()">
+        
+        <label for="">NAME:</label>
+        <input type="text" id="inp1">
+        <br>
+        <label for="">Email:</label>
+        <input type="email" name="" id="inp2">
+        <br>
+        <input type="submit" value="submit">
+        <br>
+        
+    </form>
+    
+    <script>
+        let inp1 =document.getElementById("inp1")
+        let inp2 =document.getElementById("inp2")
+
+        function getSubmit()
+        
+            if (inp1.value=="Akshay"|| inp1.value=="abc@gmail.com")
+            {
+                alert("YOUR FORM WAS SUCESSFULLY SUBMITTED!!!")
+            }
+            else
+            {
+                alert("INVALID INPUT!!!")
+            }
+     
+    </script>
+    
+</body>
+</html>

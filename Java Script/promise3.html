@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pro = new Promise ((resolve,reject)=>{
+            setTimeout(()=>{
+                
+                let gift ="I will gift you Iphone on your Birthday"
+                resolve(gift)
+                reject("Colour nahi tha sorry XIOMI le lenge")
+            },5000)
+        })
+        pro.then((bgift)=>{
+            console.log(`Mene promise kiya tha ${bgift} vo me aaj complete kiya`)
+        })
+        .catch((error)=>
+        {
+            console.log("Colour nahi tha sorry XIOMI le lenge");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            height: 100px;
+            width: 200px;
+            text-align: center;
+            line-height: 100px;
+            color: black;
+            font-size: 20px;
+            background-color: red;
+            margin-top: 20px;
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        #box1
+        {
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+
+
+        }
+        #box2
+        {
+            animation-timing-function: ease;
+        }
+        #box3
+        {
+            animation-timing-function: ease-in;
+        }
+        #box4
+        {
+            animation-timing-function: ease-out;   
+        }
+        #box5
+        {
+            width: 100vw;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes slide
+        { 
+          from
+            {
+                    width: 200px;
+                    transform:perspective(100px) rotateZ(0deg);
+            }
+            to
+            {
+                width: 100vw;
+                transform:perspective(100px) rotateZ(360deg);
+            }
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="parent" id="box1">LINEAR</div>
+        <div class="parent" id="box2">EASE</div>
+        <div class="parent" id="box3">EASE-IN</div>
+        <div class="parent" id="box4">EASE-OUT</div>
+        <div class="parent" id="box5">EASE-IN-OUT</div>
+    </div>
+</body>
+</html>

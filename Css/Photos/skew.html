@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .skew
+        {
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            text-align: center;
+            line-height: 200px;
+            margin: 0 auto;
+        
+        }
+        #skew1
+        {
+            transform:skew(30deg) ;
+        }
+        #skew2
+        {
+            transform:skewX(0deg);
+        }
+        #skew3
+        {
+            transform: skewY(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="skew" id="skew1">SKEW</div>
+    <br> 
+    <div class="skew" id="skew2">SKEW-X</div>
+    <br>
+    <div class="skew" id="skew3">SKEW-Y</div>
+    <br>
+</body>
+</html>

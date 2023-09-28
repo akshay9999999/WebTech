@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            display: grid;
+            background-color: dodgerblue;
+            grid-template-columns: auto auto auto;
+            height: 600px;
+            width: 600px;
+            gap: 10px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        .items
+        {
+            background-color: rgba(255,255,255,0.8);
+            padding: 10px;
+            text-align:center;
+
+        }
+        #items1
+        {
+            grid-column-start: 1;
+            grid-column-end:5;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="items" id="items1">1</div>
+        <div class="items" id="items2">2</div>
+        <div class="items" id="items3">3</div>
+        <div class="items" id="items4">4</div>
+        <div class="items" id="items5">5</div>
+        <div class="items" id="items6">6</div>
+        <div class="items" id="items7">7</div>
+        <div class="items" id="items8">8</div>
+        <div class="items" id="items9">9</div>
+    </div>
+</body>
+</html>

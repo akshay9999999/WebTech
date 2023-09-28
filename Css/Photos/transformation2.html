@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent
+        {
+            height: 600px;
+            width: 600px;
+            background-color: yellow;
+            border: 1px solid;
+            margin: 0 auto;
+        }
+        .child
+        {
+            height: 150px;
+            width: 300px;
+            background-color:purple;
+            text-align: center;
+            line-height: 150px;
+            font-size: 20px;
+            color: white;
+            
+        }
+        #child1
+        {
+            transform: rotateX(93deg);
+        }
+        #child2
+        {
+            transform: rotateY(93deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h3> TRANSFORMATION X AXIS </h3>
+        <div class="child" id="child1">TRANSFORMATION X AXIS </div>
+        <br>
+        <br>
+        <h3> TRANSFORMATION Y AXIS </h3>
+        <div class="child" id="child2">TRANSFORMATION Y AXIS </div>
+
+    </div>
+</body>
+</html>

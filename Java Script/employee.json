@@ -1,0 +1,21 @@
+{
+    "employee1":
+    {
+        "name":"abc",
+        "age":25,
+        "prof":"Comp B.E"
+    },
+    "employee2":
+    {
+        "name":"pqr",
+        "age":21,
+        "prof":"Cvil B.E"
+    },
+    "employee3":
+    {
+        "name":"xyz",
+        "age":35,
+        "prof":"E&TC B.E"
+    }
+
+}

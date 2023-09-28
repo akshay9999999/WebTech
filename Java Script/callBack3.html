@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function per1()
+        {
+            console.log("fun2 calling");
+
+        }
+        function per2(name,callback)
+        {
+            console.log(name+" is talking with someone else");
+            setTimeout(callback,7000)
+
+        }
+        per2("Manoj",per1)
+
+    </script>
+</body>
+</html>

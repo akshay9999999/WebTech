@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:"abc",
+            age:45
+        }
+        console.log(obj);
+
+        //delete method which is used to delete key and value pair of an object.
+
+        delete obj.age
+        console.log(obj);
+        obj.age=56
+        console.log(obj);
+
+        // asign method which is used to merge two objects
+
+        let obj1 = 
+        {
+            company:"Moto",
+            price :13000,
+
+        } 
+        let obj2 = 
+        {
+            model:"Moto",
+            price :13000,
+            
+        } 
+        let obj3 = 
+        {
+            weigth:"800gms",
+        } 
+        console.log(Object.assign(obj1,obj2,obj3));
+
+        //keys method which is used to fetch the keys of an object
+        //Values method which is used to fetch values of an object
+
+        const laptop =
+        {   
+            ram:"4gb",
+            rom:"16gb",
+            price:10000,
+
+        }
+        console.log(Object.keys(laptop));
+        console.log(Object.values(laptop));
+
+        // seal method which is used to lock the object.
+        // we cannot add new key and pair but we can modify one
+
+        let duster=
+        {
+            color:"black",
+            wt:"100gm",
+            length:"150mm"
+        }
+        console.log(Object.seal(duster));
+        duster.Cname="Camline"
+        console.log(duster);
+        duster.Cname="White"
+        console.log(duster);
+
+        let remote=
+        {
+            com:"lg",
+            price:150,
+        }
+        console.log(Object.freeze(remote));
+        remote.model="vid123"
+        console.log(remote);
+        duster.Cname="Videocon"
+        console.log(remote);
+        
+        
+ 
+</script>
+</body>
+</html>

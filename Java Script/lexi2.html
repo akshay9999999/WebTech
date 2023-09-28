@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger;
+        var a=10;
+        function lex1()
+        {
+            console.log(a);
+            lex2()
+            function lex2()
+            {
+                var b=20;
+                console.log(a+b);
+                function lex3()
+                {
+                    var c=30;
+                    var d=a+b+c
+                    console.log(d);
+                    function lex4()
+                    {
+                        var e=40;
+                        var f=a+b+c+d
+                        console.log(f);
+                    }
+                   lex4()
+                }
+            }   lex3()
+        }   
+        lex1()
+    </script>
+</body>
+</html>

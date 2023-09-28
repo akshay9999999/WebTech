@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .scale
+    {
+     height: 100px;
+     width: 200px;
+     background:yellow;
+     border: 1px solid;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 100px;
+    }
+    #scale1
+    {
+        transform: scaleY();
+    }
+    #scale2
+    {
+        transform: scale(0.5);
+    }
+    #scale3
+    {
+        transform: scale(2);
+        transform: scaleY(2);
+    }
+
+</style>
+</head>
+<body>
+    <div class="scale" id="scale1" >SCALE:2</div>
+    <div class="scale" id="scale2">SCALE:2.5</div>
+    <div class="scale" id="scale3">SCALE:3</div>
+    <br>
+</body>
+</html>

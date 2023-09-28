@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promise= new Promise((resolve,reject)=>                          
+        {
+            setTimeout(()=>
+            {
+                let shadi="i promise you will never leave you!!"
+                resolve (shadi)
+                reject("ghar wale manenge!!!")
+            },3000)
+        
+        });
+        pro.then((shadiFix)=>{
+            console.log(`mene kaha tha ${shadiFix} ghar wale man gaye`)
+        }).catch((error)=>{
+            console.log("hamara cast alag hai");
+        })
+    </script>
+</body>
+</html>

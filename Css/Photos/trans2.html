@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            height: 400px;
+            width: 400px;
+            border: 1px solid;
+            background-color: violet;
+            margin: 0 auto;
+        }
+
+        #child1
+        {
+            transition: rotateX(180deg);
+            transform-origin: top left();
+        }
+        #child2
+        {
+            transform: rotateY(90deg);
+            /* transition: rotateZ(90deg); */
+            transform-origin: center;
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="parent" id="child1">CHILD 1</div>
+    <div class="parent" id="child2">CHILD 2</div>
+</body>
+</html>

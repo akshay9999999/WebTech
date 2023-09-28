@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            height: 100px;
+            width: 200px;
+            background-color: yellowgreen;
+            transition: heigth,width;
+            text-align: center;
+            font-size: 25px;
+            color: antiquewhite;
+            transition: width;
+            transition-duration:3s; 
+            line-height: 100px;
+            border: 1px solid;
+        }
+        #trans1
+        {
+                transition-timing-function: linear;
+        }
+        #trans2
+        {
+                transition-timing-function: ease;
+        }
+        #trans3
+        {
+                transition-timing-function: ease-in;   
+        }
+        #trans4
+        {
+                transition-timing-function: ease-in-out;   
+        }
+        #trans5
+        {
+                 transition-timing-function: ease-out;
+        }
+       .parent:hover
+       {
+            height: 100px;
+            width: 100px;8
+
+       }
+    </style>
+</head>
+<body>
+    <div class="parent" id="trans1">LINEAR</div>
+    <div class="parent" id="trans2">EASE</div>
+    <div class="parent" id="trans3">EASE-IN</div>
+    <div class="parent" id="trans4">EASE-IN-OUT</div>
+    <div class="parent" id="trans5">EASE-OUT</div>
+</body>
+</html>

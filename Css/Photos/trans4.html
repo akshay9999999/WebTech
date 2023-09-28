@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trans {
+            width: 200px;
+            background-color: red;
+            text-align: center;
+            line-height: 200px;
+            margin: 0 auto;
+            margin-top: 200px;
+            font-size: 40px;
+            color: white;
+            transition: heigth 2s, width 2s, linear, transform 1s;
+        }
+
+        .trans:hover {
+            height: 400px;
+            width: 400px;
+            transform: rotateY(270deg);
+            border-radius: 50%;
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trans">HELLO</div>
+</body>
+
+</html>
